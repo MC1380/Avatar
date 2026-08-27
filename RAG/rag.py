@@ -1,8 +1,8 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 
-from config import API_KEY, BASE_URL, LLM_MODEL
-from retrieval import get_retriever
+from .config import API_KEY, BASE_URL, LLM_MODEL
+from .retrieval import get_retriever
 
 
 llm = ChatOpenAI(

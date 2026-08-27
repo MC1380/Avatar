@@ -1,14 +1,14 @@
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 import os
-from config import (
+from .config import (
     API_KEY,
     BASE_URL,
     CHROMA_DIR,
     EMBEDDING_MODEL,
 )
 
-from ingestion import load_documents, split_documents
+from .ingestion import load_documents, split_documents
 
 
 embeddings = OpenAIEmbeddings(

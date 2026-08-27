@@ -3,7 +3,7 @@ from pathlib import Path
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from config import KNOWLEDGE_BASE_DIR
+from .config import KNOWLEDGE_BASE_DIR
 
 
 def load_documents() -> list[Document]:
